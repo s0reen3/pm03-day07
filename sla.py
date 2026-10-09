@@ -1,5 +1,6 @@
 """Расчёт просрочки по учебным правилам SLA."""
-return elapsed >= LIMITS[priority]
+LIMITS = {"high": 30, "normal": 120, "low": 480}
+
 
 def is_overdue(elapsed_minutes, priority="normal"):
     if elapsed_minutes < 0:
