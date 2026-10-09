@@ -8,3 +8,4 @@ def is_overdue(elapsed_minutes, priority="normal"):
     if priority not in LIMITS:
         raise ValueError("Неизвестный приоритет")
     return elapsed_minutes >= LIMITS[priority]
+
